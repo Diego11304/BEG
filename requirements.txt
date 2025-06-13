@@ -20,7 +20,6 @@ charset-normalizer==3.4.2
 click==8.2.1
 colorama==0.4.6
 cryptography==45.0.3
-firebase-admin==6.0.1
 Flask==2.3.2
 flask-cors==6.0.0
 Flask-MySQLdb==2.0.0
