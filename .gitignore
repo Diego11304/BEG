@@ -1,0 +1,13 @@
+# Entornos virtuales
+venv/
+.venv/
+env/
+
+# Archivos de caché y logs
+__pycache__/
+*.pyc
+*.log
+
+# Archivos de credenciales y variables de entorno local
+.env
+firebase_credentials.json 
