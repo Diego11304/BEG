@@ -55,7 +55,7 @@
                         <h5 class="card-title">{{ p.nombre }}</h5>
                         <p class="card-text">{{ p.descripcion or 'Sin descripción' }}</p>
                         <p><strong>Precio:</strong> ${{ p.precio }}<br><strong>Stock:</strong> {{ p.stock }}</p>
-                        <form action="/editar/{{ p.id }}" method="post" class="mb-2">
+                        <form action="/editar/{{ p.id_producto }}" method="post" class="mb-2">
                             <input type="text" name="nombre" value="{{ p.nombre }}" class="form-control mb-1" required>
                             <input type="text" name="descripcion" value="{{ p.descripcion }}" class="form-control mb-1">
                             <input type="number" step="0.01" name="precio" value="{{ p.precio }}" class="form-control mb-1" required>
@@ -63,7 +63,7 @@
                             <input type="text" name="imagen_url" value="{{ p.imagen_url }}" class="form-control mb-2">
                             <button type="submit" class="btn btn-warning w-100">Guardar Cambios</button>
                         </form>
-                        <a href="/eliminar/{{ p.id }}" class="btn btn-danger w-100">Eliminar</a>
+                        <a href="/eliminar/{{ p.id_producto }}" class="btn btn-danger w-100">Eliminar</a>
                     </div>
                 </div>
             </div>
